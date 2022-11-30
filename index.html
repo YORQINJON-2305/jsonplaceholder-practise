@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Jsonplaceholder</title>
+</head>
+<body>
+  
+  <section class="main-section">
+    <div class="container">
+      <div class="list-wrapper">
+        <ul class="user-list">
+          
+        </ul>
+        <ul class="post-list">
+          
+        </ul>
+        <ul class="comment-list">
+          
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- COMMENT TEMPLATE -->
+  <template class="comment-template">
+    <li class="comment-item">
+      <p class="comment-title"></p>
+      <p class="comment-descr"></p>
+    </li>
+  </template>
+
+  <!-- POST TEMPLATE -->
+  <template class="post-template">
+    <li class="post-item">
+      <p class="post-title"></p>
+      <p class="post-descr"></p>
+      <button class="comment-btn">Comment</button>
+    </li>
+  </template>
+  
+  <!-- USER TEMPLATAE -->
+  <template class="user-template">
+    <li class="user-item">
+      <h2 class="user-name"></h2>
+      <h3 class="name"></h3>
+      <a class="gmail-link" href=""></a>
+      <address class="user-address">
+        <p class="address-text">Address</p>
+        <a class="user-location address-link" href="" target="blank">Location</a>
+        <a class="user-phone address-link" href="">Phone number</a>
+        <a class="user-website address-link" href="" target="blank"></a>
+      </address>
+      <div class="user-company-info">
+        <p class="company-info-text">Company Info</p>
+        <p class="company-name"></p>
+        <ul class="company-info-list">
+          <li>
+            <p class="phrase-text"></p>
+          </li>
+          <li>
+            <p class="bs-text"></p>
+          </li>
+        </ul>
+      </div>
+      <button class="user-post-btn">User post</button>
+    </li>
+  </template>
+  
+  <script src="main.js"></script>
+</body>
+</html>
